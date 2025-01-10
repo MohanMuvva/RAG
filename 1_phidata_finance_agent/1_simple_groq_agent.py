@@ -8,4 +8,4 @@ agent = Agent(
     model=Groq(id="llama-3.3-70b-versatile")
 )
 
-agent.print_response("Share a 2 sentence love story between dosa and samosa")
+agent.print_response("Create a phrase by comparing two laptops. Consider Laptops models as Dell G16 and Alienware")

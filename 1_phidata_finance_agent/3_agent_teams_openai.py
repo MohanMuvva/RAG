@@ -1,5 +1,5 @@
 from phi.agent import Agent
-from phi.model.openai import OpenAIChat
+#from phi.model.openai import OpenAIChat
 from phi.model.groq import Groq
 from phi.tools.duckduckgo import DuckDuckGo
 from phi.tools.yfinance import YFinanceTools
@@ -34,6 +34,7 @@ agent_team = Agent(
     instructions=["Always include sources", "Use tables to display data"],
     show_tool_calls=True,
     markdown=True,
+    debug_mode= True,
 )
 
 agent_team.print_response("Summarize analyst recommendations and share the latest news for NVDA", stream=True)
